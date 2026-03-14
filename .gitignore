@@ -1,0 +1,8 @@
+build/
+.vscode/
+.settings/
+*.bin
+*.elf
+*.map
+sdkconfig.old
+dependencies.lock
