@@ -1,0 +1,13 @@
+# Target labels
+ bootloader
+# Source files and their labels
+C:/area_trabajo_esp32/esp32s3-puerta-prueba/build/CMakeFiles/bootloader
+C:/area_trabajo_esp32/esp32s3-puerta-prueba/build/CMakeFiles/bootloader.rule
+C:/area_trabajo_esp32/esp32s3-puerta-prueba/build/CMakeFiles/bootloader-complete.rule
+C:/area_trabajo_esp32/esp32s3-puerta-prueba/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+C:/area_trabajo_esp32/esp32s3-puerta-prueba/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+C:/area_trabajo_esp32/esp32s3-puerta-prueba/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+C:/area_trabajo_esp32/esp32s3-puerta-prueba/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+C:/area_trabajo_esp32/esp32s3-puerta-prueba/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+C:/area_trabajo_esp32/esp32s3-puerta-prueba/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+C:/area_trabajo_esp32/esp32s3-puerta-prueba/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule

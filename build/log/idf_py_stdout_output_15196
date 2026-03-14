@@ -1,0 +1,408 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40048d1a
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x178c
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xcb8
+load:0x403cb700,len:0x2db0
+entry 0x403c8914
+[0;32mI (26) boot: ESP-IDF v5.3.1-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Mar 13 2026 22:00:55[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (30) boot: chip revision: v0.2[0m
+[0;32mI (34) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (39) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (44) boot.esp32s3: SPI Flash Size : 4MB[0m
+[0;32mI (48) boot: Enabling RNG early entropy source...[0m
+[0;32mI (54) boot: Partition Table:[0m
+[0;32mI (57) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (65) boot:  0 nvs              WiFi data        01 02 00009000 00005000[0m
+[0;32mI (72) boot:  1 otadata          OTA data         01 00 0000e000 00002000[0m
+[0;32mI (79) boot:  2 ota_0            OTA app          00 10 00010000 001e0000[0m
+[0;32mI (87) boot:  3 ota_1            OTA app          00 11 001f0000 001e0000[0m
+[0;32mI (94) boot: End of partition table[0m
+[0;32mI (99) esp_image: segment 0: paddr=00010020 vaddr=3c0b0020 size=2ba24h (178724) map[0m
+[0;32mI (139) esp_image: segment 1: paddr=0003ba4c vaddr=3fc99900 size=045cch ( 17868) load[0m
+[0;32mI (143) esp_image: segment 2: paddr=00040020 vaddr=42000020 size=ae460h (713824) map[0m
+[0;32mI (273) esp_image: segment 3: paddr=000ee488 vaddr=3fc9decc size=003bch (   956) load[0m
+[0;32mI (274) esp_image: segment 4: paddr=000ee84c vaddr=40374000 size=15874h ( 88180) load[0m
+[0;32mI (307) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (307) boot: Disabling RNG early entropy source...[0m
+[0;32mI (319) cpu_start: Multicore app[0m
+[0;32mI (328) cpu_start: Pro cpu start user code[0m
+[0;32mI (328) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (328) app_init: Application information:[0m
+[0;32mI (331) app_init: Project name:     app-template[0m
+[0;32mI (336) app_init: App version:      1.0.3[0m
+[0;32mI (341) app_init: Compile time:     Mar 13 2026 22:00:26[0m
+[0;32mI (347) app_init: ELF file SHA256:  b133c09a6...[0m
+[0;32mI (352) app_init: ESP-IDF:          v5.3.1-dirty[0m
+[0;32mI (358) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (362) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (367) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (372) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (379) heap_init: At 3FCA2490 len 00047280 (284 KiB): RAM[0m
+[0;32mI (385) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (391) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (398) heap_init: At 600FE100 len 00001EE8 (7 KiB): RTCRAM[0m
+[0;32mI (405) spi_flash: detected chip: boya[0m
+[0;32mI (408) spi_flash: flash io: dio[0m
+[0;33mW (412) spi_flash: Detected size(16384k) larger than the size in the binary image header(4096k). Using the size in the binary image header.[0m
+[0;32mI (426) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (432) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (440) main_task: Started on CPU0[0m
+[0;32mI (450) main_task: Calling app_main()[0m
+[0;33mW (470) SYSTEM: Sin WiFi configurado – modo configuracion[0m
+[0;32mI (470) pp: pp rom version: e7ae62f[0m
+[0;32mI (470) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (480) wifi:wifi driver task: 3fcacbd8, prio:23, stack:6656, core=0[0m
+[0;32mI (480) wifi:wifi firmware version: ccaebfa[0m
+[0;32mI (480) wifi:wifi certification version: v7.0[0m
+[0;32mI (490) wifi:config NVS flash: enabled[0m
+[0;32mI (490) wifi:config nano formating: disabled[0m
+[0;32mI (490) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (500) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (500) wifi:Init management short buffer num: 32[0m
+[0;32mI (510) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (510) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (520) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (520) wifi:Init static rx buffer num: 10[0m
+[0;32mI (520) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (530) wifi_init: rx ba win: 6[0m
+[0;32mI (530) wifi_init: accept mbox: 6[0m
+[0;32mI (540) wifi_init: tcpip mbox: 32[0m
+[0;32mI (540) wifi_init: udp mbox: 6[0m
+[0;32mI (540) wifi_init: tcp mbox: 6[0m
+[0;32mI (550) wifi_init: tcp tx win: 5760[0m
+[0;32mI (550) wifi_init: tcp rx win: 5760[0m
+[0;32mI (560) wifi_init: tcp mss: 1440[0m
+[0;32mI (560) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (560) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (570) SYSTEM: Iniciando AP de configuracion: ESP32_CONFIG[0m
+[0;32mI (580) phy_init: phy_version 680,a6008b2,Jun  4 2024,16:41:10[0m
+[0;32mI (620) wifi:mode : softAP (80:b5:4e:d9:b8:15)[0m
+[0;32mI (620) wifi:Total power save buffer number: 16[0m
+[0;32mI (620) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (620) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (620) SYSTEM: AP listo: SSID=ESP32_CONFIG  PASS=config1234  → abrir 192.168.4.1[0m
+[0;32mI (630) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1[0m
+[0;32mI (640) SYSTEM: Servidor configuracion listo en 192.168.4.1[0m
+[0;32mI (650) SYSTEM: Conectate a 'ESP32_CONFIG' y abre 192.168.4.1[0m
+[0;32mI (42480) wifi:new:<1,0>, old:<1,1>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (42480) wifi:station: 86:65:5b:d9:65:d7 join, AID=1, bgn, 20[0m
+[0;32mI (42850) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+[0;32mI (43780) wifi:<ba-add>idx:2 (ifx:1, 86:65:5b:d9:65:d7), tid:0, ssn:16, winSize:64[0m
+[0;33mW (95590) httpd_uri: httpd_uri: URI '/favicon.ico' not found[0m
+[0;33mW (95590) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;32mI (136040) wifi:station: 86:65:5b:d9:65:d7 leave, AID = 1, reason = 3, bss_flags is 691315, bss:0x3fcb8270[0m
+[0;32mI (136040) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (136050) wifi:<ba-del>idx:2, tid:0[0m
+[0;32mI (381990) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (381990) wifi:station: 86:65:5b:d9:65:d7 join, AID=1, bgn, 20[0m
+[0;32mI (382230) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+[0;32mI (382900) wifi:<ba-add>idx:2 (ifx:1, 86:65:5b:d9:65:d7), tid:0, ssn:16, winSize:64[0m
+[0;32mI (406450) SYSTEM: Config recibida: ssid=Esp32&wpass=12345678&user=admin&pass=1234[0m
+[0;32mI (406450) SYSTEM: SSID: Esp32  USER: admin[0m
+[0;32mI (406460) SYSTEM: WiFi guardado en NVS: SSID=Esp32[0m
+[0;32mI (406460) SYSTEM: Credenciales de chapa actualizadas[0m
+[0;32mI (408470) wifi:station: 86:65:5b:d9:65:d7 leave, AID = 1, reason = 4, bss_flags is 691315, bss:0x3fcb8270[0m
+[0;32mI (408470) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (408470) wifi:<ba-del>idx:2, tid:0[0m
+[0;32mI (408530) wifi:flush txq[0m
+[0;32mI (408530) wifi:stop sw txq[0m
+[0;32mI (408530) wifi:lmac stop hw txq[0m
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375ab4
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x178c
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xcb8
+load:0x403cb700,len:0x2db0
+entry 0x403c8914
+[0;32mI (26) boot: ESP-IDF v5.3.1-dirty 2nd stage bootloader[0m
+[0;32mI (26) boot: compile time Mar 13 2026 22:00:55[0m
+[0;32mI (26) boot: Multicore bootloader[0m
+[0;32mI (30) boot: chip revision: v0.2[0m
+[0;32mI (34) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (38) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32s3: SPI Flash Size : 4MB[0m
+[0;32mI (48) boot: Enabling RNG early entropy source...[0m
+[0;32mI (53) boot: Partition Table:[0m
+[0;32mI (57) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (64) boot:  0 nvs              WiFi data        01 02 00009000 00005000[0m
+[0;32mI (71) boot:  1 otadata          OTA data         01 00 0000e000 00002000[0m
+[0;32mI (79) boot:  2 ota_0            OTA app          00 10 00010000 001e0000[0m
+[0;32mI (86) boot:  3 ota_1            OTA app          00 11 001f0000 001e0000[0m
+[0;32mI (94) boot: End of partition table[0m
+[0;32mI (98) esp_image: segment 0: paddr=00010020 vaddr=3c0b0020 size=2ba24h (178724) map[0m
+[0;32mI (139) esp_image: segment 1: paddr=0003ba4c vaddr=3fc99900 size=045cch ( 17868) load[0m
+[0;32mI (143) esp_image: segment 2: paddr=00040020 vaddr=42000020 size=ae460h (713824) map[0m
+[0;32mI (272) esp_image: segment 3: paddr=000ee488 vaddr=3fc9decc size=003bch (   956) load[0m
+[0;32mI (273) esp_image: segment 4: paddr=000ee84c vaddr=40374000 size=15874h ( 88180) load[0m
+[0;32mI (306) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (307) boot: Disabling RNG early entropy source...[0m
+[0;32mI (318) cpu_start: Multicore app[0m
+[0;32mI (327) cpu_start: Pro cpu start user code[0m
+[0;32mI (328) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (328) app_init: Application information:[0m
+[0;32mI (330) app_init: Project name:     app-template[0m
+[0;32mI (336) app_init: App version:      1.0.3[0m
+[0;32mI (340) app_init: Compile time:     Mar 13 2026 22:00:26[0m
+[0;32mI (346) app_init: ELF file SHA256:  b133c09a6...[0m
+[0;32mI (352) app_init: ESP-IDF:          v5.3.1-dirty[0m
+[0;32mI (357) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (362) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (367) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (372) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (379) heap_init: At 3FCA2490 len 00047280 (284 KiB): RAM[0m
+[0;32mI (385) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (391) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (397) heap_init: At 600FE100 len 00001EE8 (7 KiB): RTCRAM[0m
+[0;32mI (404) spi_flash: detected chip: boya[0m
+[0;32mI (408) spi_flash: flash io: dio[0m
+[0;33mW (412) spi_flash: Detected size(16384k) larger than the size in the binary image header(4096k). Using the size in the binary image header.[0m
+[0;32mI (425) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (432) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (439) main_task: Started on CPU0[0m
+[0;32mI (449) main_task: Calling app_main()[0m
+[0;32mI (469) SYSTEM: Conectando a WiFi: Esp32[0m
+[0;32mI (469) pp: pp rom version: e7ae62f[0m
+[0;32mI (469) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (479) wifi:wifi driver task: 3fcacfd0, prio:23, stack:6656, core=0[0m
+[0;32mI (479) wifi:wifi firmware version: ccaebfa[0m
+[0;32mI (489) wifi:wifi certification version: v7.0[0m
+[0;32mI (489) wifi:config NVS flash: enabled[0m
+[0;32mI (489) wifi:config nano formating: disabled[0m
+[0;32mI (489) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (499) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (499) wifi:Init management short buffer num: 32[0m
+[0;32mI (509) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (509) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (519) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (519) wifi:Init static rx buffer num: 10[0m
+[0;32mI (519) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (529) wifi_init: rx ba win: 6[0m
+[0;32mI (529) wifi_init: accept mbox: 6[0m
+[0;32mI (539) wifi_init: tcpip mbox: 32[0m
+[0;32mI (539) wifi_init: udp mbox: 6[0m
+[0;32mI (539) wifi_init: tcp mbox: 6[0m
+[0;32mI (549) wifi_init: tcp tx win: 5760[0m
+[0;32mI (549) wifi_init: tcp rx win: 5760[0m
+[0;32mI (559) wifi_init: tcp mss: 1440[0m
+[0;32mI (559) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (559) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (569) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (599) phy_init: phy_version 680,a6008b2,Jun  4 2024,16:41:10[0m
+[0;32mI (679) wifi:mode : sta (80:b5:4e:d9:b8:14)[0m
+[0;32mI (679) wifi:enable tsf[0m
+[0;32mI (679) SYSTEM: Esperando conexion WiFi...[0m
+[0;33mW (3089) SYSTEM: WiFi desconectado – intento 1 de 20[0m
+[0;33mW (5499) SYSTEM: WiFi desconectado – intento 2 de 20[0m
+[0;33mW (7909) SYSTEM: WiFi desconectado – intento 3 de 20[0m
+[0;33mW (10319) SYSTEM: WiFi desconectado – intento 4 de 20[0m
+[0;33mW (12729) SYSTEM: WiFi desconectado – intento 5 de 20[0m
+[0;33mW (15139) SYSTEM: WiFi desconectado – intento 6 de 20[0m
+[0;33mW (17549) SYSTEM: WiFi desconectado – intento 7 de 20[0m
+[0;33mW (19959) SYSTEM: WiFi desconectado – intento 8 de 20[0m
+[0;32mI (20679) SYSTEM: Iniciando servidor HTTP...[0m
+[0;32mI (20679) SYSTEM: Servidor HTTP iniciado (rutas: /abrir  /status  /ota  /reset)[0m
+[0;31mE (20679) esp-tls: [sock=57] connect() error: Host is unreachable[0m
+[0;31mE (20679) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (20689) mqtt_client: Error transport connect[0m
+[0;31mE (20699) SYSTEM: MQTT error[0m
+[0;33mW (20699) SYSTEM: MQTT desconectado[0m
+[0;32mI (20699) SYSTEM: MQTT iniciado → mqtt://192.168.99.133:1884[0m
+[0;32mI (20709) SYSTEM: Sistema listo y estable[0m
+[0;32mI (20709) main_task: Returned from app_main()[0m
+[0;33mW (22369) SYSTEM: WiFi desconectado – intento 9 de 20[0m
+[0;33mW (24779) SYSTEM: WiFi desconectado – intento 10 de 20[0m
+[0;33mW (27189) SYSTEM: WiFi desconectado – intento 11 de 20[0m
+[0;33mW (29599) SYSTEM: WiFi desconectado – intento 12 de 20[0m
+[0;33mW (32009) SYSTEM: WiFi desconectado – intento 13 de 20[0m
+[0;33mW (34409) SYSTEM: WiFi desconectado – intento 14 de 20[0m
+[0;31mE (35699) esp-tls: [sock=57] connect() error: Host is unreachable[0m
+[0;31mE (35699) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (35699) mqtt_client: Error transport connect[0m
+[0;31mE (35699) SYSTEM: MQTT error[0m
+[0;33mW (35709) SYSTEM: MQTT desconectado[0m
+[0;33mW (36819) SYSTEM: WiFi desconectado – intento 15 de 20[0m
+[0;33mW (39229) SYSTEM: WiFi desconectado – intento 16 de 20[0m
+[0;33mW (41639) SYSTEM: WiFi desconectado – intento 17 de 20[0m
+[0;33mW (44049) SYSTEM: WiFi desconectado – intento 18 de 20[0m
+[0;33mW (46459) SYSTEM: WiFi desconectado – intento 19 de 20[0m
+[0;33mW (48869) SYSTEM: WiFi desconectado – intento 20 de 20[0m
+[0;31mE (48869) SYSTEM: No se pudo conectar. Modo AP de emergencia.[0m
+[0;33mW (48869) SYSTEM: Activando Access Point de emergencia[0m
+[0;32mI (48879) wifi:mode : sta (80:b5:4e:d9:b8:14) + softAP (80:b5:4e:d9:b8:15)[0m
+[0;32mI (48889) wifi:Total power save buffer number: 16[0m
+[0;32mI (48889) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (48889) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (49409) wifi:Total power save buffer number: 16[0m
+[0;32mI (49419) SYSTEM: AP emergencia listo: SSID=ESP32_DOOR  PASS=12345678[0m
+[0;33mW (49419) SYSTEM: Servidor ya iniciado, ignorando llamada duplicada[0m
+[0;32mI (49419) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1[0m
+[0;32mI (49429) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1[0m
+[0;31mE (60719) esp-tls: [sock=57] select() timeout[0m
+[0;31mE (60719) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (60719) mqtt_client: Error transport connect[0m
+[0;31mE (60719) SYSTEM: MQTT error[0m
+[0;33mW (60719) SYSTEM: MQTT desconectado[0m
+[0;31mE (85739) esp-tls: [sock=57] select() timeout[0m
+[0;31mE (85739) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (85739) mqtt_client: Error transport connect[0m
+[0;31mE (85739) SYSTEM: MQTT error[0m
+[0;33mW (85739) SYSTEM: MQTT desconectado[0m
+[0;31mE (110759) esp-tls: [sock=57] select() timeout[0m
+[0;31mE (110759) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (110759) mqtt_client: Error transport connect[0m
+[0;31mE (110759) SYSTEM: MQTT error[0m
+[0;33mW (110769) SYSTEM: MQTT desconectado[0m
+[0;31mE (135779) esp-tls: [sock=57] select() timeout[0m
+[0;31mE (135779) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (135779) mqtt_client: Error transport connect[0m
+[0;31mE (135779) SYSTEM: MQTT error[0m
+[0;33mW (135789) SYSTEM: MQTT desconectado[0m
+[0;31mE (160799) esp-tls: [sock=57] select() timeout[0m
+[0;31mE (160799) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (160799) mqtt_client: Error transport connect[0m
+[0;31mE (160799) SYSTEM: MQTT error[0m
+[0;33mW (160809) SYSTEM: MQTT desconectado[0m
+[0;31mE (185819) esp-tls: [sock=57] select() timeout[0m
+[0;31mE (185819) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (185819) mqtt_client: Error transport connect[0m
+[0;31mE (185819) SYSTEM: MQTT error[0m
+[0;33mW (185829) SYSTEM: MQTT desconectado[0m
+[0;31mE (210839) esp-tls: [sock=57] select() timeout[0m
+[0;31mE (210839) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (210839) mqtt_client: Error transport connect[0m
+[0;31mE (210839) SYSTEM: MQTT error[0m
+[0;33mW (210849) SYSTEM: MQTT desconectado[0m
+[0;31mE (235859) esp-tls: [sock=57] select() timeout[0m
+[0;31mE (235859) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (235859) mqtt_client: Error transport connect[0m
+[0;31mE (235859) SYSTEM: MQTT error[0m
+[0;33mW (235869) SYSTEM: MQTT desconectado[0m
+[0;31mE (260879) esp-tls: [sock=57] select() timeout[0m
+[0;31mE (260879) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (260879) mqtt_client: Error transport connect[0m
+[0;31mE (260879) SYSTEM: MQTT error[0m
+[0;33mW (260889) SYSTEM: MQTT desconectado[0m
+[0;31mE (285899) esp-tls: [sock=57] select() timeout[0m
+[0;31mE (285899) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (285899) mqtt_client: Error transport connect[0m
+[0;31mE (285899) SYSTEM: MQTT error[0m
+[0;33mW (285909) SYSTEM: MQTT desconectado[0m
+[0;31mE (310919) esp-tls: [sock=57] select() timeout[0m
+[0;31mE (310919) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (310919) mqtt_client: Error transport connect[0m
+[0;31mE (310919) SYSTEM: MQTT error[0m
+[0;33mW (310929) SYSTEM: MQTT desconectado[0m
+[0;31mE (335939) esp-tls: [sock=57] select() timeout[0m
+[0;31mE (335939) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (335939) mqtt_client: Error transport connect[0m
+[0;31mE (335939) SYSTEM: MQTT error[0m
+[0;33mW (335949) SYSTEM: MQTT desconectado[0m
+[0;31mE (360959) esp-tls: [sock=57] select() timeout[0m
+[0;31mE (360959) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (360959) mqtt_client: Error transport connect[0m
+[0;31mE (360959) SYSTEM: MQTT error[0m
+[0;33mW (360969) SYSTEM: MQTT desconectado[0m
+[0;32mI (433) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (440) main_task: Started on CPU0[0m
+[0;32mI (450) main_task: Calling app_main()[0m
+[0;32mI (480) SYSTEM: Conectando a WiFi: Esp32[0m
+[0;32mI (480) pp: pp rom version: e7ae62f[0m
+[0;32mI (480) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (490) wifi:wifi driver task: 3fcad054, prio:23, stack:6656, core=0[0m
+[0;32mI (500) wifi:wifi firmware version: ccaebfa[0m
+[0;32mI (500) wifi:wifi certification version: v7.0[0m
+[0;32mI (500) wifi:config NVS flash: enabled[0m
+[0;32mI (500) wifi:config nano formating: disabled[0m
+[0;32mI (500) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (510) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (510) wifi:Init management short buffer num: 32[0m
+[0;32mI (520) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (520) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (530) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (530) wifi:Init static rx buffer num: 10[0m
+[0;32mI (530) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (540) wifi_init: rx ba win: 6[0m
+[0;32mI (540) wifi_init: accept mbox: 6[0m
+[0;32mI (550) wifi_init: tcpip mbox: 32[0m
+[0;32mI (550) wifi_init: udp mbox: 6[0m
+[0;32mI (550) wifi_init: tcp mbox: 6[0m
+[0;32mI (560) wifi_init: tcp tx win: 5760[0m
+[0;32mI (560) wifi_init: tcp rx win: 5760[0m
+[0;32mI (570) wifi_init: tcp mss: 1440[0m
+[0;32mI (570) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (570) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (590) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (590) phy_init: phy_version 680,a6008b2,Jun  4 2024,16:41:10[0m
+[0;32mI (630) wifi:mode : sta (80:b5:4e:d9:b8:14)[0m
+[0;32mI (630) wifi:enable tsf[0m
+[0;32mI (630) SYSTEM: Esperando conexion WiFi...[0m
+[0;32mI (1730) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (1730) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (1740) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (1750) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (1860) wifi:connected with Esp32, aid = 2, channel 6, BW20, bssid = be:93:e7:9c:56:96[0m
+[0;32mI (1860) wifi:security: WPA2-PSK, phy: bgn, rssi: -29[0m
+[0;32mI (1870) wifi:pm start, type: 1[0m
+
+[0;32mI (1870) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (1880) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (1900) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (1900) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (2880) esp_netif_handlers: sta ip: 192.168.19.40, mask: 255.255.255.0, gw: 192.168.19.133[0m
+[0;32mI (2880) SYSTEM: WiFi conectado – IP: 192.168.19.40[0m
+[0;32mI (3220) SYSTEM: Iniciando servidor HTTP...[0m
+[0;32mI (3220) SYSTEM: Servidor HTTP iniciado (rutas: /abrir  /status  /ota  /reset)[0m
+[0;32mI (3220) SYSTEM: MQTT iniciado → mqtt://192.168.99.133:1884[0m
+[0;32mI (3220) SYSTEM: Sistema listo y estable[0m
+[0;32mI (3230) main_task: Returned from app_main()[0m
+[0;31mE (13230) esp-tls: [sock=57] select() timeout[0m
+[0;31mE (13230) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (13230) mqtt_client: Error transport connect[0m
+[0;31mE (13230) SYSTEM: MQTT error[0m
+[0;33mW (13230) SYSTEM: MQTT desconectado[0m
+[0;31mE (38250) esp-tls: [sock=57] select() timeout[0m
+[0;31mE (38250) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (38250) mqtt_client: Error transport connect[0m
+[0;31mE (38250) SYSTEM: MQTT error[0m
+[0;33mW (38250) SYSTEM: MQTT desconectado[0m
+[0;31mE (63270) esp-tls: [sock=57] select() timeout[0m
+[0;31mE (63270) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (63270) mqtt_client: Error transport connect[0m
+[0;31mE (63270) SYSTEM: MQTT error[0m
+[0;33mW (63270) SYSTEM: MQTT desconectado[0m
+[0;31mE (88290) esp-tls: [sock=57] select() timeout[0m
+[0;31mE (88290) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (88290) mqtt_client: Error transport connect[0m
+[0;31mE (88290) SYSTEM: MQTT error[0m
+[0;33mW (88290) SYSTEM: MQTT desconectado[0m
+[0;31mE (113310) esp-tls: [sock=57] select() timeout[0m
+[0;31mE (113310) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (113310) mqtt_client: Error transport connect[0m
+[0;31mE (113310) SYSTEM: MQTT error[0m
+[0;33mW (113320) SYSTEM: MQTT desconectado[0m
+[0;31mE (138330) esp-tls: [sock=57] select() timeout[0m
+[0;31mE (138330) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (138330) mqtt_client: Error transport connect[0m
+[0;31mE (138330) SYSTEM: MQTT error[0m
+[0;33mW (138340) SYSTEM: MQTT desconectado[0m
+[0;31mE (163350) esp-tls: [sock=57] select() timeout[0m
+[0;31mE (163350) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (163350) mqtt_client: Error transport connect[0m
+[0;31mE (163350) SYSTEM: MQTT error[0m
+[0;33mW (163360) SYSTEM: MQTT desconectado[0m
+[0;31mE (188370) esp-tls: [sock=57] select() timeout[0m
+[0;31mE (188370) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (188370) mqtt_client: Error transport connect[0m
+[0;31mE (188370) SYSTEM: MQTT error[0m
+[0;33mW (188380) SYSTEM: MQTT desconectado[0m
